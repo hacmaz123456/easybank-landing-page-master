@@ -5,7 +5,8 @@ class Toggle extends React.Component {
         super(props);
 
         this.state = {
-            showHide: false
+            showHide: false,
+            menuMobileIcon: 'fa-bars'
         };
         
         this.display = this.display.bind(this);
@@ -21,15 +22,17 @@ class Toggle extends React.Component {
     render() {
         return (
             <div>
-                <div id="menuBtn"  onClick={this.display}>
-                    <i className="fas fa-bars"></i>
+                <div id="menuBtn"  onClick={this.display} >
+                    <i className={this.state.showHide ? 'fas fa-times' : 'fas fa-bars'}></i>
                 </div>
-                <div className="items" id="menu" style={{display: this.state.showHide ? 'block' : 'none'}}>
-                    <a href="#">Home</a>
-                    <a href="#">About</a>
-                    <a href="#">Contact</a>
-                    <a href="#">Blog</a>
-                    <a href="#">Careers</a>
+                <div className="menuMobile" style={{display: this.state.showHide ? 'block' : 'none'}}>
+                    <div className="items" id="menu" style={{display: this.state.showHide ? 'block' : 'none'}}>
+                        <a href="#">Home</a>
+                        <a href="#">About</a>
+                        <a href="#">Contact</a>
+                        <a href="#">Blog</a>
+                        <a href="#">Careers</a>
+                    </div>
                 </div>
             </div>
         );
