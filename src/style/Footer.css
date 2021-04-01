@@ -1,0 +1,41 @@
+.footer {
+    background-color: hsl(233, 26%, 24%);
+    color: white;
+    text-align: center;
+    padding: 30px 140px;
+}
+.footer .social {
+    margin: 25px 0;
+}
+.footer .social a {
+    margin: 0 8px;
+}
+.footer .nav1 a, .footer .nav2 a {
+    color: white;
+    display: block;
+    text-decoration: none;
+    margin: 8px 0;
+}
+.footer .btn {
+    margin-top: 15px;
+    margin-bottom: 14px;
+}
+.footer a:hover, .footer .social a {
+    color: hsl(136, 65%, 51%);
+}
+@media only screen and (min-width: 769px) {
+    .footer div {
+        position: relative;
+    }
+    .footer .nav1 a, .footer .nav2 a {
+        margin: 0 0 8px 0;
+    }
+    .footer .btn {
+        margin-top: 0;
+        margin-bottom: 15px;
+    }
+    .footer .social {
+        margin-bottom: 0;
+        position: relative;
+    }
+}
