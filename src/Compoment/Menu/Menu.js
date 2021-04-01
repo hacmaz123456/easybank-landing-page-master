@@ -1,29 +1,39 @@
-function Menu() {
-    function openMenu() {
-        var menuItem = document.getElementById('menu');
+import React from "react";
 
-        if (menuItem.style.display === 'none') {
-            menuItem.style.display = 'block';
-        }
-        else {
-            menuItem.style.display = 'none';
-        }
+class Toggle extends React.Component {
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            showHide: false
+        };
+        
+        this.display = this.display.bind(this);
     }
 
-    return (
-        <div>
-            <div id="menuBtn" onClick={openMenu}>
-                <i className="fas fa-bars"></i>
+
+    display() {
+        this.setState(state => ({
+            showHide: !this.state.showHide
+        }));
+    }
+
+    render() {
+        return (
+            <div>
+                <div id="menuBtn"  onClick={this.display}>
+                    <i className="fas fa-bars"></i>
+                </div>
+                <div className="items" id="menu" style={{display: this.state.showHide ? 'block' : 'none'}}>
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Careers</a>
+                </div>
             </div>
-            <div className="items" id="menu">
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Contact</a>
-                <a href="#">Blog</a>
-                <a href="#">Careers</a>
-            </div>
-        </div>
-    );
+        );
+    }
 }
 
-export default Menu;
+export default Toggle;
