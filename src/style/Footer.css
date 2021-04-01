@@ -4,6 +4,9 @@
     text-align: center;
     padding: 30px 140px;
 }
+.footer .logo {
+    text-align: center;
+}
 .footer .social {
     margin: 25px 0;
 }
@@ -24,8 +27,15 @@
     color: hsl(136, 65%, 51%);
 }
 @media only screen and (min-width: 769px) {
+    .footer .logo {
+        text-align: left;
+    }
     .footer div {
         position: relative;
+    }
+    .footer .container {
+        display: flex;
+        justify-content: space-between;
     }
     .footer .nav1 a, .footer .nav2 a {
         margin: 0 0 8px 0;
