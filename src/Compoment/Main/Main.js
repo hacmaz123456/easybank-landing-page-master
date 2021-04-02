@@ -62,7 +62,7 @@ function Main() {
       </div>
       <div className="container-fluid latest-articles-container">
         <div className="latest-articles">
-          <div className="title">Latest Articles</div>
+          <div className="container title">Latest Articles</div>
           <div className="container">
             <div className="row justify-content-between">
               <div className="col-xs-12 col-sm-6 col-md-6 col-lg-3 items">
