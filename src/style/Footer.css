@@ -26,6 +26,9 @@
 .footer a:hover, .footer .social a {
     color: hsl(136, 65%, 51%);
 }
+.footer .social svg:hover path {
+    fill: hsl(136, 65%, 51%);
+}
 @media only screen and (min-width: 769px) {
     .footer .logo {
         text-align: left;
