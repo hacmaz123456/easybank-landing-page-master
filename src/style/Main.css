@@ -67,6 +67,12 @@
     color: hsl(192, 70%, 51%);
 }
 @media (min-width: 576px) {
+    .main .text .title, .main .text .description {
+        text-align: left;
+    }
+    .main .text .description {
+        width: 600px;
+    }
     .main .benefit, .main .benefit .title {
         text-align: left;
     }
