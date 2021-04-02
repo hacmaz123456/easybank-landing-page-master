@@ -71,7 +71,7 @@
     .main .text .title, .main .text .description {
         text-align: left;
     }
-    .main .text .description {
+    .main .text .description:nth-of-type(1) {
         width: 600px;
     }
     .main .benefit, .main .benefit .title {

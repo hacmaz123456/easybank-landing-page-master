@@ -4,6 +4,7 @@ import './index.css';
 import Header from "./Compoment/Header/Header"
 import Main from "./Compoment/Main/Main"
 import Footer from "./Compoment/Footer/Footer"
+import Signature from "./Compoment/Signature/Signature"
 
 
 ReactDOM.render(
@@ -11,6 +12,7 @@ ReactDOM.render(
     <Header />
     <Main />
     <Footer />
+    <Signature />
   </React.StrictMode>,
   document.getElementById('root')
 );
